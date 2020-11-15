@@ -1,9 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Monefy Test" parallel="classes" thread-count="1">
+<suite name="Monefy Test">
     <listeners>
         <listener class-name="listener.ScreenshotListener"></listener>
     </listeners>
     <test name="Monefy Test">
+        <classes>
+            <class name="monefyIncomeExpenseEntryTest"></class>
+            <class name="monefyValidateBalanceTest"></class>
+        </classes>
     </test>
 </suite>

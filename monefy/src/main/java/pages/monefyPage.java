@@ -50,6 +50,15 @@ public class monefyPage extends baseMobilePageObject<monefyPage> {
     public By expenseCategoryButton(String category){
         return By.xpath("//android.widget.TextView[@resource-id=\"com.monefy.app.lite:id/textCategoryName\" and @text[normalize-space()=\""+category+"\"]]//parent::android.widget.LinearLayout");
     }
-
+    protected  By settingsEllipsis = By.xpath("//android.widget.TextView[@content-desc=\"Settings\"]");
+    protected By settingsButton = By.id("com.monefy.app.lite:id/settings_button");
+    public By dataBackButton(String dataAction){
+        return By.id("com.monefy.app.lite:id/"+dataAction+"_database_button");
+    }
+    public By permissionButton(String permission){
+        return By.id("com.android.permissioncontroller:id/permission_"+permission+"_button");
+    }
+    protected By okButton = By.id("android:id/button1");
+    protected By cancelButton = By.id("android:id/button2");
 }
 

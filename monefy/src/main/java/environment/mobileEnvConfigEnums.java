@@ -10,8 +10,7 @@ public enum mobileEnvConfigEnums {
     APPIUM_HOST("APPIUM_HOST"),
     APPIUM_PORT("APPIUM_PORT"),
     APP_PORT("APP_PORT"),
-    APP_HOST("APP_HOST"),
-    APP_HOST_2("APP_HOST_2");
+    APP_HOST("APP_HOST");
     private final String value;
 
     mobileEnvConfigEnums(String value) {

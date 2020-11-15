@@ -34,8 +34,8 @@ public class monefyKeyword extends monefyPage {
     public void getEntryDetails(){
         log.info("Get entry details.");
         verifyObjectExist(entryAmountLabel(mapHelper.mapEntry("income")), 1000);
-        incomeValue = getText(entryAmountLabel(mapHelper.mapEntry("income"))).replaceAll("₱|,", "").trim();
-        expenseValue = getText(entryAmountLabel(mapHelper.mapEntry("expense"))).replaceAll("₱|,", "").trim();
+        incomeValue = getText(entryAmountLabel(mapHelper.mapEntry("income"))).replaceAll("₱|\\,", "").trim();
+        expenseValue = getText(entryAmountLabel(mapHelper.mapEntry("expense"))).replaceAll("₱|\\,", "").trim();
     }
     public void validateBalance(){
         log.info("Get balance details.");
@@ -61,7 +61,7 @@ public class monefyKeyword extends monefyPage {
             currentValue = expenseValue;
         }
         verifyObjectExist(entryAmountLabel(mapHelper.mapEntry(entryType)), 1000);
-        float newBalance = Float.parseFloat(getText(entryAmountLabel(mapHelper.mapEntry(entryType))).replaceAll("₱", "").trim());
+        float newBalance = Float.parseFloat(getText(entryAmountLabel(mapHelper.mapEntry(entryType))).replaceAll("₱|\\,", "").trim());
         decimalFormat = new DecimalFormat("#.##");
         float currentVal = Float.parseFloat(currentValue);
         float Amount = Float.parseFloat(addedAmount);
