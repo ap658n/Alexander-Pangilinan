@@ -1,0 +1,5 @@
+TC_001,Validate day balance calculation.,day
+TC_002,Validate week balance calculation.,week
+TC_003,Validate month balance calculation.,month
+TC_004,Validate year balance calculation.,year
+TC_005,Validate all balance calculation.,all

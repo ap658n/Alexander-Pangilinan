@@ -1,0 +1,6 @@
+TC_001,Validate that the user can add savings income for date today and check entry details is correct.,income,0,1,Savings
+TC_002,Validate that the user can add salary income for the past date and check entry details is correct.,income,-5,2,Salary
+TC_003,Validate that the user can add deposits income for the future date and check entry details is correct.,income,5,3,Deposits
+TC_004,Validate that the user can add bills expense for date today and check entry details is correct.,expense,0,1,Bills
+TC_005,Validate that the user can add car expense for the past date and check entry details is correct.,expense,-5,2,Car
+TC_006,Validate that the user can add clothes expense for the future date and check entry details is correct.,expense,5,3,Clothes

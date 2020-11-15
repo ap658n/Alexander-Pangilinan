@@ -1,0 +1,24 @@
+Exploratory Testing
+	- Explore App installation, install app from google store, to discover installation behavior, required user's permission and Terms and conditions.
+	- Explore App expense vs income tracking features, with expense and income input, to discover if the computation and the breakdown are correct.
+	- Explore App expense vs income graph representation, with expense and income input, to discover if the graph display is correct.
+	- Explore App data backup, with expense vs income data, to discover if the application can succesfully store, restore and clear backup data.
+
+Findings
+	- Most of the functions work as expected.
+	- Bugs, there are minor bugs that I've found.
+		1. There are icons or expense's in the main display that have not a line connecting/pointing to pie chart even the expense has percent/value.
+		2. The button label for income and expense change without notifying the user, it changes from word income to plus (+) sign.
+
+Prioritisation
+	- I explore first the main feature of the app which is the expense vs income. Where, as a user I must able to insert expense and income and must be displayed correctly in the main screen. The reason why I choose this is because, If I'll be in a situation that has only limited time to explore the application, I will first secure that the main feature is working as expected. But if there will be enough time to conduct the exploration or testing in an application, I will prioritize first the app installation testing. This is to secure that the app is working properly without any issue. 
+	
+Time 
+	- 2 hours for main feature exploration
+	- 5 minutes for installation
+	- 15 minutes for data backup
+
+Risk 
+	- User's out budget due to incorrect computation.
+	- Data security of income details.
+	- Data security of credentials for backup synchronization.
