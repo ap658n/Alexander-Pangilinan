@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="API automation Test">
+    <test name="API automation  Test">
+        <classes>
+            <class name="addNewPetApiTest"></class>
+            <class name="findPetsByStatusApiTest"></class>
+        </classes>
+    </test>
+</suite>
