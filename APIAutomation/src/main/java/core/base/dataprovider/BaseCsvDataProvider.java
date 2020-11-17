@@ -13,11 +13,7 @@ import java.lang.reflect.Method;
 import java.util.Iterator;
 
 
-/**
- * Parse test case data from test data file. For current provider, data file type is csv.
- *
- * @author zhichen.szc
- */
+
 public class BaseCsvDataProvider implements Iterator<Object[]> {
 
     protected static final Logger LOGGER = LoggerFactory.getLogger(BaseCsvDataProvider.class);
