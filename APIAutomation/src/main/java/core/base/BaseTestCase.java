@@ -2,6 +2,8 @@ package core.base;
 
 import core.base.dataprovider.BaseCsvDataProvider;
 import core.Starter;
+import core.listener.ProjectProcessListener;
+import core.listener.ProjectReportListener;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.test.context.TestExecutionListeners;
@@ -12,16 +14,17 @@ import org.springframework.test.context.testng.AbstractTestNGSpringContextTests;
 import org.springframework.test.context.web.ServletTestExecutionListener;
 import org.testng.ITestContext;
 import org.testng.annotations.DataProvider;
+import org.testng.annotations.Listeners;
 
 import java.io.IOException;
 import java.lang.reflect.Method;
 import java.net.URL;
 import java.text.SimpleDateFormat;
 import java.util.*;
-
-@TestExecutionListeners({ ServletTestExecutionListener.class,
-        DependencyInjectionTestExecutionListener.class,
-        DirtiesContextTestExecutionListener.class})
+@Listeners({ProjectReportListener.class, ProjectProcessListener.class})
+//@TestExecutionListeners({ ServletTestExecutionListener.class,
+//        DependencyInjectionTestExecutionListener.class,
+//        DirtiesContextTestExecutionListener.class})
 @SpringJUnitConfig(classes = Starter.class)
 public class BaseTestCase extends AbstractTestNGSpringContextTests {
 
