@@ -1,16 +1,15 @@
 import core.base.BaseTestCase;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Component;
 import org.testng.annotations.Test;
-import service.AddNewPetApi;
-@Component
-public class addNewPetApiTest extends BaseTestCase {
+import core.service.AddNewPetApi;
 
+
+public class addNewPetApiTest extends BaseTestCase {
+    @Autowired
     private AddNewPetApi addNewPetApi;
-    //addNewPetApiTest.testAddNewPetApi.csv
+
     @Test(dataProvider = "DefaultProvider")
-    public void testAddNewPetApi(String caseId, String description){
-        addNewPetApi = new AddNewPetApi();
+    public void testAddNewPetApi(String caseId, String description) {
         addNewPetApi.sendRequest(13);
     }
 }

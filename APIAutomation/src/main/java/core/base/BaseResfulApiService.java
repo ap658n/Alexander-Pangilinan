@@ -4,7 +4,7 @@ import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONArray;
 import com.alibaba.fastjson.JSONObject;
 import core.base.model.ResfulApiRequestModel;
-import helpers.JsonHelper;
+import core.helpers.JsonHelper;
 import org.apache.http.HttpHeaders;
 import org.apache.http.client.methods.CloseableHttpResponse;
 import org.apache.http.client.methods.HttpEntityEnclosingRequestBase;
@@ -25,6 +25,7 @@ import org.apache.http.ssl.SSLContexts;
 import org.apache.http.util.EntityUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.stereotype.Component;
 import org.testng.Assert;
 
 import javax.annotation.concurrent.NotThreadSafe;
@@ -39,6 +40,7 @@ import java.security.cert.X509Certificate;
 import java.util.Base64;
 import java.util.Map;
 
+@Component
 public abstract class BaseResfulApiService {
 
     protected static final Logger LOGGER = LoggerFactory.getLogger(BaseResfulApiService.class);

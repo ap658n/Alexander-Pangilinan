@@ -1,4 +1,4 @@
-package service;
+package core.service;
 
 import com.alibaba.fastjson.JSONObject;
 import core.base.BaseResfulApiService;

@@ -11,7 +11,7 @@ Findings
 		2. The button label for income and expense change without notifying the user, it changes from word income to plus (+) sign.
 
 Prioritisation
-	- I explore first the main feature of the app which is the expense vs income. Where, as a user I must able to insert expense and income and must be displayed correctly in the main screen. The reason why I choose this is because, If I'll be in a situation that has only limited time to explore the application, I will first secure that the main feature is working as expected. But if there will be enough time to conduct the exploration or testing in an application, I will prioritize first the app installation testing. This is to secure that the app is working properly without any issue. 
+	- I explore first the main feature of the app which is the expense vs income. Where, as a user I must able to insert expense and income and must be displayed correctly in the main screen. The reason why I choose this is because, I'm in a situation that has only limited time to explore the application for the first time, so I will first secure that the main feature is working as expected. But if there will be enough time to conduct the exploration or testing in an application, I will prioritize first the app installation testing. This is to ensure that the app is working properly without any issue during and after the installation. 
 	
 Time 
 	- 2 hours for main feature exploration

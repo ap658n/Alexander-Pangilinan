@@ -1,4 +1,6 @@
-package helpers;
+package core.helpers;
+
+import org.springframework.stereotype.Component;
 
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
@@ -7,7 +9,7 @@ import java.time.ZonedDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.Calendar;
 import java.util.Date;
-
+@Component
 public class commonHelper {
 
     public static String getCurrentFilename(){

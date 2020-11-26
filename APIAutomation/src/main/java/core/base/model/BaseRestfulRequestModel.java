@@ -3,8 +3,10 @@ package core.base.model;
 import org.apache.commons.httpclient.Cookie;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.stereotype.Component;
 
 import java.util.Map;
+
 
 public class BaseRestfulRequestModel {
 

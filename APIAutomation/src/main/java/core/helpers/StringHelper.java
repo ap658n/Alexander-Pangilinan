@@ -1,13 +1,14 @@
-package helpers;
+package core.helpers;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.stereotype.Component;
 
 import java.io.*;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.regex.Pattern;
-
+@Component
 public class StringHelper {
 
     protected static final Logger LOGGER = LoggerFactory.getLogger(StringHelper.class);

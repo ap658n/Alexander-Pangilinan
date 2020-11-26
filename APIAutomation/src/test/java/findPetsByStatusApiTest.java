@@ -1,8 +1,7 @@
 import core.base.BaseTestCase;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 import org.testng.annotations.Test;
-import service.FindPetsByStatusApi;
+import core.service.FindPetsByStatusApi;
 
 @Component
 public class findPetsByStatusApiTest extends BaseTestCase {

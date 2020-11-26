@@ -2,8 +2,8 @@ package core.base.model;
 
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONObject;
-import helpers.JsonHelper;
-import helpers.StringHelper;
+import core.helpers.JsonHelper;
+import core.helpers.StringHelper;
 import org.apache.http.NameValuePair;
 import org.apache.http.message.BasicNameValuePair;
 import org.springframework.util.ResourceUtils;
@@ -16,6 +16,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+
 
 public class ResfulApiRequestModel extends BaseHttpRequsetModel {
     private static final String CONTENT_TYPE_FORMDATA = "application/x-www-form-urlencoded";
